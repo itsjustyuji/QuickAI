@@ -2,17 +2,17 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // scan all files in src
+    "./src/**/*.{js,ts,jsx,tsx}", 
   ],
   theme: {
     extend: {
       colors: {
-        primary: "#5044E5", // your custom color
+        primary: "#5044E5",
       },
       fontFamily: {
-        outfit: ["Outfit", "sans-serif"], // your Google font
+        outfit: ["Outfit", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }
